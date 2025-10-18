@@ -1,6 +1,6 @@
-package exceptions;
+package com.example.demo.exceptions;
 
-class ErrorConectionMongoException extends Exception {
+public class ErrorConectionMongoException extends Exception {
     private static final long serialVersionUID = 3L;
 
     public ErrorConectionMongoException(String mensaje) {

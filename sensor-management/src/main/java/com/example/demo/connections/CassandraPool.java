@@ -3,7 +3,8 @@ package connections;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.CqlSessionBuilder;
 
-import exceptions.ErrorConectionCassandraException;
+import com.example.demo.exceptions.ErrorConectionCassandraException;
+
 
 import java.net.InetSocketAddress;
 

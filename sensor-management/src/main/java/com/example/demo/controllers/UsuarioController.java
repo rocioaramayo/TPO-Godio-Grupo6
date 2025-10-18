@@ -1,7 +1,7 @@
-package controllers;
+package com.example.demo.controllers;
 
-import modelo.Usuario;
-import services.UsuarioService;
+import com.example.demo.modelo.Usuario;
+import com.example.demo.services.UsuarioService;
 
 public class UsuarioController {
     

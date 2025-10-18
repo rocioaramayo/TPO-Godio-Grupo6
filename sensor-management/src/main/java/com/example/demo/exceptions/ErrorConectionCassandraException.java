@@ -1,6 +1,6 @@
-package exceptions;
+package com.example.demo.exceptions;
 
-class ErrorConectionCassandraException extends Exception {
+public class ErrorConectionCassandraException extends Exception {
     private static final long serialVersionUID = 4L;
 
     public ErrorConectionCassandraException(String mensaje) {

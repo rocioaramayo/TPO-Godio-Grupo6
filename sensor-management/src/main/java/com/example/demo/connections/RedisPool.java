@@ -1,6 +1,7 @@
 package connections;
 
-import exceptions.ErrorConectionRedisException;
+import com.example.demo.exceptions.ErrorConectionRedisException;
+
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 

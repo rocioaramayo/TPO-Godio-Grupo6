@@ -1,10 +1,10 @@
-package connections;
+package com.example.demo.connections;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import exceptions.ErrorConectionMySQLException;
+import com.example.demo.exceptions.ErrorConectionMySQLException;
 
 public class MySQLPool {
     
@@ -37,4 +37,4 @@ public class MySQLPool {
             throw new ErrorConectionMySQLException("Error al conectar con MySQL: " + e.getMessage());
         }
     }
-}
+    }

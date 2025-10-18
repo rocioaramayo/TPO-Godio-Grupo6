@@ -4,7 +4,8 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
-import exceptions.ErrorConectionMongoException;
+import com.example.demo.exceptions.ErrorConectionMongoException;
+
 
 public class MongoPool {
 
