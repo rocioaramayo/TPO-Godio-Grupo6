@@ -1,7 +1,7 @@
 package test;
 
 import controllers.UsuarioController;
-import modelo.Usuario;
+import main.java.com.example.demo.modelo.Usuario;
 
 public class Test {
 

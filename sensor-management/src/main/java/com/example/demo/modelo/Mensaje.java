@@ -11,9 +11,12 @@ public class Mensaje {
     private Date fechaHora;
     private String contenido;
     private String tipo; // privado/grupal
+    private boolean leido;
     
     // Constructor vacío
-    public Mensaje() {}
+    public Mensaje() {
+        this.leido = false;
+    }
     
     // Constructor para mensaje privado
     public Mensaje(Integer idRemitente, String nombreRemitente, 
@@ -24,6 +27,7 @@ public class Mensaje {
         this.contenido = contenido;
         this.tipo = "privado";
         this.fechaHora = new Date();
+        this.leido = false;
     }
     
     // Constructor para mensaje grupal
@@ -35,6 +39,20 @@ public class Mensaje {
         this.contenido = contenido;
         this.tipo = "grupal";
         this.fechaHora = new Date();
+        this.leido = false;
+    }
+    
+    // Métodos de utilidad
+    public boolean esPrivado() {
+        return "privado".equals(tipo);
+    }
+    
+    public boolean esGrupal() {
+        return "grupal".equals(tipo);
+    }
+    
+    public void marcarComoLeido() {
+        this.leido = true;
     }
     
     // Getters y Setters
@@ -102,6 +120,14 @@ public class Mensaje {
         this.tipo = tipo;
     }
     
+    public boolean isLeido() {
+        return leido;
+    }
+    
+    public void setLeido(boolean leido) {
+        this.leido = leido;
+    }
+    
     @Override
     public String toString() {
         return "Mensaje{" +
@@ -110,6 +136,7 @@ public class Mensaje {
                 ", tipo='" + tipo + '\'' +
                 ", fechaHora=" + fechaHora +
                 ", contenido='" + contenido + '\'' +
+                ", leido=" + leido +
                 '}';
     }
 }

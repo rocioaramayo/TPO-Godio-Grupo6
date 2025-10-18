@@ -1,4 +1,4 @@
-package connections;
+package com.example.demo.connections;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
